@@ -1,0 +1,54 @@
+@font-face {
+  font-family: Geometria;
+  font-display: swap;
+  src: url("./fonts/fonts/Geometria.woff2") format("woff2"), url("./fonts/fonts/Geometria.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Geometria;
+  font-display: swap;
+  src: url("./fonts/fonts/Geometria-Bold.woff2") format("woff2"), url("./fonts/fonts/Geometria-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Geometria;
+  font-display: swap;
+  src: url("./fonts/fonts/Geometria-LightItalic.woff2") format("woff2"), url("./fonts/fonts/Geometria-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: Geometria;
+  font-display: swap;
+  src: url("./fonts/fonts/Geometria-Medium.woff2") format("woff2"), url("./fonts/fonts/Geometria-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Jost;
+  font-display: swap;
+  src: url("./fonts/fonts/Jost-Bold.woff2") format("woff2"), url("./fonts/fonts/Jost-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Jost;
+  font-display: swap;
+  src: url("./fonts/fonts/Jost-Medium.woff2") format("woff2"), url("./fonts/fonts/Jost-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Jost;
+  font-display: swap;
+  src: url("./fonts/fonts/Jost-ExtraBold.woff2") format("woff2"), url("./fonts/fonts/Jost-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}kjxgm4");
+  src: url("../fonts/icomoon.eot?kjxgm4#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?kjxgm4") format("truetype"), url("../fonts/icomoon.woff?kjxgm4") format("woff"), url("../fonts/icomoon.svg?kjxgm4#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}

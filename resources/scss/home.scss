@@ -1,0 +1,248 @@
+//====================================================================================================
+
+//====================================================================================================
+
+//====================================НАСТРОЙКИ СТРАНИЦы===================================================
+.page {
+  position: relative;
+  transition: margin-top 0.3s ease;
+
+  &.search-open {
+    margin-top: 88px;
+    transition: margin-top 0.3s ease;
+
+    .search-container {
+      display: block;
+    }
+  }
+
+  &__main-block {
+  }
+}
+
+//====================================СТРОКА ПОИСКА==============================================
+
+.search-container {
+  display: none;
+  @include adaptiveValue("padding-top", 24, 24, 1, $maxWidth, $minWidth);
+  @include adaptiveValue("padding-bottom", 24, 24, 1, $maxWidth, $minWidth);
+  @include adaptiveValue("padding-right", 280, 16, 1, $maxWidth, $minWidth);
+  @include adaptiveValue("padding-left", 280, 16, 1, $maxWidth, $minWidth);
+}
+.search-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  @include adaptiveValue("font-size", 32, 24, 1, $maxWidth, $minWidth);
+  gap: 24px;
+  padding: toRem(0) toRem(8) toRem(12) toRem(8);
+
+  &__line {
+    // border: 2px solid blue;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: #8c8c8c;
+    bottom: 0;
+  }
+
+  &__cancel {
+    color: #8c8c8c;
+    font-size: toRem(32);
+    cursor: pointer;
+  }
+
+  &__find {
+    font-size: toRem(32);
+    color: #86c13a;
+    cursor: pointer;
+  }
+
+  &__cancel,
+  &__find {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  input {
+    border: none;
+    width: 100%;
+    outline: none;
+    color: #232323;
+    font-weight: 600;
+    &:valid ~ label {
+      display: none;
+    }
+  }
+
+  //При фокусировке поля input - плавное появление значков поиска и очистить
+
+  input:focus ~ .search-block__cancel,
+  input:focus ~ .search-block__find {
+    opacity: 1;
+  }
+
+  input:valid ~ .search-block__cancel,
+  input:valid ~ .search-block__find {
+    opacity: 1;
+  }
+
+  label {
+    position: absolute;
+    top: 50%;
+    left: 2%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-weight: 600;
+    color: #cdcdcd;
+  }
+
+  span {
+    color: #000;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 1;
+  }
+}
+
+//====================================МОБИЛЬНОЕ МЕНЮ==============================================
+
+//====================================ГЛАВНЫЙ БЛОК на ГЛАВНОЙ СТРАНИЦЕ==============================================
+
+.main-block {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+
+  &__left {
+  }
+
+  &__right {
+  }
+}
+.left-mainblock {
+  width: calc((704 / 1440) * 100%);
+  background: #8eca40;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  video {
+    display: none;
+  }
+  @media (max-width: $mobile) {
+    // background: url("../../public/video/Mainvideo.mp4") cover no-repeat;
+    position: relative;
+    width: 100%;
+    background: none;
+
+    video {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      opacity: 50%;
+    }
+  }
+
+  &__content {
+    color: #fff;
+    // padding: toRem(308) toRem(64) toRem(0) toRem(64);
+    @include adaptiveValue("padding-top", 220, 260, 1, $maxWidth, $minWidth);
+    @include adaptiveValue("padding-right", 64, 16, 1, $maxWidth, $minWidth);
+    @include adaptiveValue("padding-left", 64, 16, 1, $maxWidth, $minWidth);
+    @include adaptiveValue("padding-bottom", 80, 47, 1, $maxWidth, $minWidth);
+
+    @media (max-width: $mobile) {
+      background-color: none;
+      opacity: 100%;
+      color: #000;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    @include adaptiveValue("font-size", 80, 48, 1, $maxWidth, $minWidth);
+    // font-size: toRem(80);
+    margin-bottom: toRem(21);
+  }
+
+  &__subtitle {
+    @include adaptiveValue("font-size", 24, 16, 1, $maxWidth, $minWidth);
+    // font-size: toRem(24);
+    font-weight: 600;
+    line-height: math.div(31, 24);
+  }
+
+  &__button {
+  }
+}
+
+.ask-button {
+  border: 1px solid #6ea428;
+  background-color: #6ea428;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: toRem(48) toRem(0) toRem(48) toRem(0);
+  @include adaptiveValue("padding-right", 64, 16, 1, $maxWidth, $minWidth);
+  @include adaptiveValue("padding-left", 64, 16, 1, $maxWidth, $minWidth);
+  @include adaptiveValue("padding-top", 53, 25, 1, $maxWidth, $minWidth);
+  @include adaptiveValue("padding-bottom", 53, 25, 1, $maxWidth, $minWidth);
+
+  &__text {
+    // font-size: toRem(32);
+    @include adaptiveValue("font-size", 32, 20, 1, $maxWidth, $minWidth);
+    font-weight: 600;
+    color: #fff;
+  }
+  img {
+    @include adaptiveValue("width", 42, 32, 1, $maxWidth, $minWidth);
+    @include adaptiveValue("height", 42, 32, 1, $maxWidth, $minWidth);
+  }
+}
+
+.right-mainblock {
+  position: relative;
+  width: calc((736 / 1440) * 100%);
+  @media (max-width: $mobile) {
+    display: none;
+  }
+  video {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__arrowdown {
+    position: absolute;
+    z-index: 10;
+    bottom: calc((60 / 812) * 100%);
+    right: calc((68 / 736) * 100%);
+    background-color: $mainColor;
+    border-radius: 50%;
+    padding: toRem(5);
+    animation: move 1.1s infinite ease-in-out;
+    cursor: pointer;
+    @keyframes move {
+      0% {
+        bottom: calc((60 / 812) * 100%);
+      }
+      50% {
+        bottom: calc((50 / 812) * 100%);
+      }
+      100% {
+        bottom: calc((40 / 812) * 100%);
+      }
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+    }
+  }
+}

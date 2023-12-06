@@ -1,0 +1,97 @@
+// %ic {
+// 	font-family: "icons";
+// 	font-style: normal;
+// 	font-weight: normal;
+// 	font-variant: normal;
+// 	text-transform: none;
+// 	line-height: 1;
+// 	-webkit-font-smoothing: antialiased;
+// 	-moz-osx-font-smoothing: grayscale;
+// }
+// [class*="_icon-"] {
+// 	&:before {
+// 		@extend %ic;
+// 		display: block;
+// 	}
+// }
+
+@font-face {
+	font-family: "Gilroy";
+	src:
+		local("Gilroy Medium"),
+		local("Gilroy-Medium"),
+		url("../fonts/Gilroy-Medium.woff2") format("woff2"),
+		url("../fonts/Gilroy-Medium.woff") format("woff"),
+		url("../fonts/Gilroy-Medium.ttf") format("truetype");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Gilroy";
+	src:
+		local("Gilroy Bold"),
+		local("Gilroy-Bold"),
+		url("../fonts/Gilroy-Bold.woff2") format("woff2"),
+		url("../fonts/Gilroy-Bold.woff") format("woff"),
+		url("../fonts/Gilroy-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Gilroy";
+	src:
+		local("Gilroy Ultra Light"),
+		local("Gilroy-Ultra-Light"),
+		url("../fonts/Gilroy-UltraLight.woff2") format("woff2"),
+		url("../fonts/Gilroy-UltraLight.woff") format("woff"),
+		url("../fonts/Gilroy-UltraLight.ttf") format("truetype");
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src:
+		local("Gilroy Semibold"),
+		local("Gilroy-Semibold"),
+		url("../fonts/Gilroy-Semibold.woff2") format("woff2"),
+		url("../fonts/Gilroy-Semibold.woff") format("woff"),
+		url("../fonts/Gilroy-Semibold.ttf") format("truetype");
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gilroy";
+	src:
+		local("Gilroy Regular"),
+		local("Gilroy-Regular"),
+		url("../fonts/Gilroy-Regular.woff2") format("woff2"),
+		url("../fonts/Gilroy-Regular.woff") format("woff"),
+		url("../fonts/Gilroy-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "icons";
+	src: url("../fonts/icomoon.eot?kjxgm4");
+	src:
+		url("../fonts/icomoon.eot?kjxgm4#iefix") format("embedded-opentype"),
+		url("../fonts/icomoon.ttf?kjxgm4") format("truetype"),
+		url("../fonts/icomoon.woff?kjxgm4") format("woff"),
+		url("../fonts/icomoon.svg?kjxgm4#icomoon") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+	// font-family: "icons";
+	// src: url("../fonts/icomoon.eot?5q12e5");
+	// src:
+	// 	url("../fonts/icomoon.eot?5q12e5#iefix") format("embedded-opentype"),
+	// 	url("../fonts/icomoon.ttf?5q12e5") format("truetype"),
+	// 	url("../fonts/icomoon.woff?5q12e5") format("woff"),
+	// 	url("../fonts/icomoon.svg?5q12e5#icomoon") format("svg");
+	// font-weight: normal;
+	// font-style: normal;
+	// font-display: block;
+}

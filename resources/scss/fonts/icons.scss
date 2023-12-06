@@ -1,0 +1,67 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+// [class^="_icon-"],
+// [class*=" _icon-"] {
+// 	/* use !important to prevent issues with browser extensions that change fonts */
+// 	font-family: "icomoon" !important;
+// 	speak: never;
+// 	font-style: normal;
+// 	font-weight: normal;
+// 	font-variant: normal;
+// 	text-transform: none;
+// 	line-height: 1;
+
+// 	/* Better Font Rendering =========== */
+// 	-webkit-font-smoothing: antialiased;
+// 	-moz-osx-font-smoothing: grayscale;
+// }
+
+// ._icon-arrow:after {
+// 	content: "\e900";
+// }
+// ._icon-search:before {
+// 	content: "\e901";
+// }
+// ._icon-SearchGlass:before {
+// 	content: "\e903";
+// 	color: #000;
+// }
+// ._icon-close:before {
+// 	content: "\e904";
+// }
+// ._icon-qus__arrow:before {
+// 	content: "\e902";
+// 	color: #fff;
+// }
+
+._icon-wallet:before {
+	content: "\e902";
+	color: #86c13a;
+}
+._icon-bell:before {
+	content: "\e903";
+}
+._icon-arrow:before {
+	content: "\e900";
+}
+._icon-search:before {
+	content: "\e901";
+}
+._icon-cancel-circle:before {
+	content: "\ea0d";
+}
